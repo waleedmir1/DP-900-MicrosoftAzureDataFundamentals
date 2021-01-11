@@ -30,14 +30,14 @@ In this task, we will create and populate a table in an SQL database using SQL q
 	Id int PRIMARY KEY, 
 	Name VARCHAR(50), 
 	Stock INTEGER
-);
+); ’’’
 
+```SQL 
 INSERT INTO Inventory (Id, Name, Stock) VALUES (1, 'banana', 150); 
 INSERT INTO Inventory (Id, Name, Stock) VALUES (2, 'orange', 154);
 INSERT INTO Inventory (Id, Name, Stock) VALUES (3, 'apple', 23); 
 INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);  
   ```
-
 
 6. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
