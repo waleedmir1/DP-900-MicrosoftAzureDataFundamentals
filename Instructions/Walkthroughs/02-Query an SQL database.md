@@ -35,12 +35,13 @@ In this task, we will create and populate a table in an SQL database using SQL q
 INSERT INTO Inventory (Id, Name, Stock) VALUES (1, 'banana', 150); 
 INSERT INTO Inventory (Id, Name, Stock) VALUES (2, 'orange', 154);
 INSERT INTO Inventory (Id, Name, Stock) VALUES (3, 'apple', 23); 
-INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);    ```
+INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);  
+  ```
 
 
 6. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
-       ![Screenshot of the Query editor with the query pane and the commands executing and creating Inventory table successfully.](../images/0109.png)
+![Screenshot of the Query editor with the query pane and the commands executing and creating Inventory table successfully.](../images/0109.PNG)
 
 7. Once you have successfully created Inventory, create a second table by entering the following query into the editor pane.
 
@@ -58,14 +59,15 @@ INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALU
 INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (3, 'Stephen Stone', 3, 3, getdate());
 INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (4, 'Claire Smith', 1, 1, getdate());
 INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (5, 'Sarah Fedun', 4, 3, getdate());
-INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (6, 'Graham Hinson', 3, 9, getdate());   ```
+INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALUES (6, 'Graham Hinson', 3, 9, getdate());   
+```
 
-           ![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table.](../images/0110.png)
+![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table.](../images/0110.PNG)
 
 8. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-           ![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table successfully.](../images/0111.png)
+           ![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table successfully.](../images/0111.PNG)
 
 9. Once you have successfully created Customer Order table, run the following queries to view the data from tables created .
 
@@ -73,7 +75,7 @@ INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALU
 Select * 
 From Inventory    ```
 
-           ![Screenshot of the Query editor with select query example 1 successfully.](../images/0112.png)
+           ![Screenshot of the Query editor with select query example 1 successfully.](../images/0112.PNG)
 
 And
 
@@ -81,7 +83,7 @@ And
 Select * 
 From CustomerOrder    ```
 
-       ![Screenshot of the Query editor with select query example 2 successfully.](../images/0113.png)
+       ![Screenshot of the Query editor with select query example 2 successfully.](../images/0113.PNG)
 
 
 
@@ -188,7 +190,7 @@ WHERE
 2. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-             ![Screenshot of the Query editor updating customer order successfully.](../images/0114.png)
+             ![Screenshot of the Query editor updating customer order successfully.](../images/0114.PNG)
        
 3. Once you have successfully updated CustomerOrder table, run the following queries to view the changes.
 
@@ -199,7 +201,7 @@ From CustomerOrder    ```
 4. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-       ![Screenshot of the Query editor with updated table successfully.](../images/0115.png)
+       ![Screenshot of the Query editor with updated table successfully.](../images/0115.PNG)
 
 5. Once you have successfully updated a table, run the following queries to Delete a table.
 
@@ -210,10 +212,10 @@ Drop Table CustomerOrder;
 6. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-       ![Screenshot of the Query editor with deleted table successfully.](../images/0116.png)
+       ![Screenshot of the Query editor with deleted table successfully.](../images/0116.PNG)
 
 7. Click **refresh icon**, and then review the tables. You should no longer be able to see CustomerOrder in the list.
-       ![Screenshot of the Query editor with refresh table list successfully.](../images/0117.png)
+       ![Screenshot of the Query editor with refresh table list successfully.](../images/0117.PNG)
 
 
 
