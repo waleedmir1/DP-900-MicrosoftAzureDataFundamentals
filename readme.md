@@ -1,4 +1,4 @@
-# AP-900: Microsoft Azure Data Fundamentals
+# DP-900: Microsoft Azure Data Fundamentals
 
 ## What are we doing?
 
