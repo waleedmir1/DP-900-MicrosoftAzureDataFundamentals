@@ -2,6 +2,8 @@
 
 ## Click on Instructions/Walkthroughs/ to find the links to the labs
 
+## <a href="https://github.com/waleedmir1/DP-900-MicrosoftAzureDataFundamentals/wiki">Click here for HTML view</a> 
+
 ## What are we doing?
 
 - To support these courses, we will need to make frequent updates to the course content to keep it current with the Azure services used in the course.  We are publishing the lab instructions on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes in the Azure platform.
