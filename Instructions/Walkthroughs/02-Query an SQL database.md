@@ -18,7 +18,7 @@ In this task, we will create and populate a table in an SQL database using SQL q
 
 3. Click the **db1** entry representing the SQL database you created, and then click **Query editor (preview)**.
    
- ![Screenshot of the SQL database and Query editor.](../images/0106.png)
+![Screenshot of the SQL database and Query editor.](../images/0106.png)
 
 
 4. Login as **sqluser** with the password **Pa$$w0rd1234**.
@@ -102,20 +102,22 @@ In this task, we will run queries against the database in an SQL database using 
 
 
     ```SQL
-SELECT * 
-FROM Inventory    ```
+    SELECT * 
+    FROM Inventory    
+    ```
 
 2. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-             ![Screenshot of the Query editor View Inventory table successfully.](../images/0118.png)
+![Screenshot of the Query editor View Inventory table successfully.](../images/0118.png)
        
 3. Replace the current SQL statement with the following statement to only show the number of bananas in stock:
 
-    ```SQL
-SELECT * 
-FROM Inventory 
-WHERE Name = 'banana'    ```
+```SQL
+    SELECT * 
+    FROM Inventory 
+    WHERE Name = 'banana'  
+```
       
 There should be 150 bananas.
 
