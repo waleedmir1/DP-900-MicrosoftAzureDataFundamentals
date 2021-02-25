@@ -31,7 +31,7 @@ In this task, we will create and populate a table in an SQL database using SQL q
 	Name VARCHAR(50), 
 	Stock INTEGER		);
     ```
-Insert data
+***Insert data***.
 
     ```SQL 
     INSERT INTO Inventory (Id, Name, Stock) VALUES (1, 'banana', 150); 
