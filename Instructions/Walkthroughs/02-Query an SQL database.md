@@ -73,23 +73,25 @@ INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALU
 8. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
 
-           ![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table successfully.](../images/0111.PNG)
+![Screenshot of the Query editor with the query pane and the commands executing and creating Customer Order table successfully.](../images/0111.PNG)
 
 9. Once you have successfully created Customer Order table, run the following queries to view the data from tables created .
 
     ```SQL
-Select * 
-From Inventory    ```
+    Select * 
+    From Inventory    
+    ```
 
-           ![Screenshot of the Query editor with select query example 1 successfully.](../images/0112.PNG)
+![Screenshot of the Query editor with select query example 1 successfully.](../images/0112.PNG)
 
 And
 
     ```SQL
-Select * 
-From CustomerOrder    ```
+    Select * 
+    From CustomerOrder   
+    ```
 
-       ![Screenshot of the Query editor with select query example 2 successfully.](../images/0113.PNG)
+![Screenshot of the Query editor with select query example 2 successfully.](../images/0113.PNG)
 
 
 
