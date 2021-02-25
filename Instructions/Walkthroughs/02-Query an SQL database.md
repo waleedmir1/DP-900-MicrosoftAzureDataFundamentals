@@ -42,14 +42,19 @@ INSERT INTO Inventory (Id, Name, Stock) VALUES (4, 'lemon', 254);
 
 7. Once you have successfully created Inventory, create a second table by entering the following query into the editor pane.
 
+
     ```SQL
-    CREATE TABLE CustomerOrder (
+        CREATE TABLE CustomerOrder (
 	Id int PRIMARY KEY, 
 	CustomerName VARCHAR(50),
     Quantity int,
     Created DATETIME,
     InventoryId int FOREIGN KEY REFERENCES Inventory(Id)
 );
+	
+```SQL
+
+    ```SQL
 
 ```SQL
 
