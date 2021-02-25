@@ -1,5 +1,5 @@
 ---
-    title: '01 - Create a SQL database (5 min)'
+    title: '01 - Create a SQL database (15 min)'
     module: 'Module 02 - Explore relational data in Azure'
 ---
 
@@ -7,7 +7,7 @@
 
 In this walkthrough, we will create a SQL database in Azure and then query the data in that database.
 
-# Task 1: Create the database (5 min)
+# Task 1: Create the database (10 min)
 
 In this task, we will create a SQL database based on the AdventureWorksLT sample database. 
 
@@ -63,7 +63,7 @@ In this task, we will create a SQL database based on the AdventureWorksLT sample
 
 7. Go to the resource tab to locate the SQL database you created. You may need to refresh.
 
-# Task 2: Test the database.
+# Task 2: Test the database (5 min) 
 
 In this task, we will configure the SQL server and run a SQL query. 
 
