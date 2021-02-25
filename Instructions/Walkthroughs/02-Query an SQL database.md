@@ -85,11 +85,10 @@ INSERT INTO CustomerOrder(Id, CustomerName, InventoryId, Quantity, Created) VALU
 ![Screenshot of the Query editor with select query example 1 successfully.](../images/0112.PNG)
 
 And
-
-    ```SQL
+```SQL
     Select * 
     From CustomerOrder   
-    ```
+ ```
 
 ![Screenshot of the Query editor with select query example 2 successfully.](../images/0113.PNG)
 
@@ -121,64 +120,68 @@ In this task, we will run queries against the database in an SQL database using 
       
 There should be 150 bananas.
 
-      ![Screenshot of the Query editor with select where successfully.](../images/0119.png)
+![Screenshot of the Query editor with select where successfully.](../images/0119.png)
 
 
 5. Replace the SQL statement with the following statement to retrieve the inventory items in order of the quantity in stock:
 
-    ```SQL
-SELECT * 
-FROM Inventory 
-ORDER BY Stock    ```
-
-       ![Screenshot of the Query editor with select order successfully.](../images/0120.png)
+```SQL
+    SELECT * 
+    FROM Inventory 
+    ORDER BY Stock  
+```
+![Screenshot of the Query editor with select order successfully.](../images/0120.png)
 
 6. Replace the SQL statement with the statement shown below. This statement is a query that uses the JOIN operator to combine data from the CustomerOrder table and the Inventory table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
 
+```SQL
+    SELECT * 
+    FROM Inventory 
+    JOIN CustomerOrder ON Inventory.Id = CustomerOrder.InventoryId    
+   ```
 
-    ```SQL
-SELECT * 
-FROM Inventory 
-JOIN CustomerOrder ON Inventory.Id = CustomerOrder.InventoryId    ```
-
-             ![Screenshot of the Query editor select join successfully.](../images/0121.png)
+![Screenshot of the Query editor select join successfully.](../images/0121.png)
        
 7. Change the query to find the names of all customers who have ordered oranges.
 
-    ```SQL
-SELECT CustomerOrder.CustomerName 
-FROM CustomerOrder
-JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
-AND Inventory.Name = 'orange'    ```
+```SQL
+    SELECT CustomerOrder.CustomerName 
+    FROM CustomerOrder
+    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
+    AND Inventory.Name = 'orange'   
+ ```
       
 This query should return two customers: John Smith and Jane Brown.
 
 8. Find out how many customers have ordered lemons. This query uses the COUNT(*) function, which returns the number of rows that match the query criteria.
 
-    ```SQL
-SELECT COUNT(*) 
-FROM CustomerOrder
-JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
-AND Inventory.Name = 'lemon'    ```
+```SQL
+    SELECT COUNT(*) 
+    FROM CustomerOrder
+    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
+    AND Inventory.Name = 'lemon'    
+  ```
 
 The results of this query should indicate that only one customer has ordered lemons.
 
 8. Which fruits has John Smith ordered?
 
-    ```SQL
-SELECT Inventory.Name 
-FROM CustomerOrder
-JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
-AND CustomerOrder.CustomerName = 'John Smith'    ```
+```SQL
+    SELECT Inventory.Name 
+    FROM CustomerOrder
+    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
+    AND CustomerOrder.CustomerName = 'John Smith'    
+   ```
 
 The results of this query should show that John Smith has only ordered oranges.
 
 9. What is the total quantity of items ordered by all customers? The Quantity column in the CustomerOrder table contains the quantity for each order. This query uses the SUM aggregate function to add the quantities together to product a grand total:
 
-    ```SQL
-SELECT SUM(CustomerOrder.Quantity) 
-FROM CustomerOrder
-JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID    ```
+```SQL
+    SELECT SUM(CustomerOrder.Quantity) 
+    FROM CustomerOrder
+    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID   
+   ```
 
 The answer should be 29.
 
@@ -190,42 +193,41 @@ In this task, we will update and delete a table in an SQL database using SQL que
 
 1. Once you have successfully created the tables, run the following queries to UPDATE the CustomerOrder table.
 
-    ```SQL
-UPDATE CustomerOrder
-SET 
+```SQL
+    UPDATE CustomerOrder
+    SET 
     Quantity = '9'
-WHERE
-    ID = 2;    ```
+    WHERE
+    ID = 2;   
+   ```
 
 2. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
-
-             ![Screenshot of the Query editor updating customer order successfully.](../images/0114.PNG)
+![Screenshot of the Query editor updating customer order successfully.](../images/0114.PNG)
        
 3. Once you have successfully updated CustomerOrder table, run the following queries to view the changes.
 
-    ```SQL
-Select * 
-From CustomerOrder    ```
+```SQL
+    Select * 
+    From CustomerOrder   
+   ```
 
 4. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
-
-       ![Screenshot of the Query editor with updated table successfully.](../images/0115.PNG)
+![Screenshot of the Query editor with updated table successfully.](../images/0115.PNG)
 
 5. Once you have successfully updated a table, run the following queries to Delete a table.
 
-    ```SQL
-Drop Table CustomerOrder;
-    ```
+```SQL
+    Drop Table CustomerOrder;
+   ```
 
 6. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
-
-       ![Screenshot of the Query editor with deleted table successfully.](../images/0116.PNG)
+![Screenshot of the Query editor with deleted table successfully.](../images/0116.PNG)
 
 7. Click **refresh icon**, and then review the tables. You should no longer be able to see CustomerOrder in the list.
-       ![Screenshot of the Query editor with refresh table list successfully.](../images/0117.PNG)
+![Screenshot of the Query editor with refresh table list successfully.](../images/0117.PNG)
 
 
 
