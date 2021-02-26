@@ -2,7 +2,7 @@
 
 ## Click on Instructions/Walkthroughs/ to find the links to the labs
 
-## <a href="https://github.com/waleedmir1/DP-900-MicrosoftAzureDataFundamentals/wiki">Click here for HTML view</a> 
+## <a href="https://github.com/waleedmir1/DP-900-MicrosoftAzureDataFundamentals/wiki/DP-900-MicrosoftAzureDataFundamentals">Click here for HTML view</a> 
 
 ## What are we doing?
 
